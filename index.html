@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Note Taking App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="design.css">
+    <script src="script.js" async defer></script>
+  </head>
+  <body>
+    <nav>
+      <h2 id="username">Your Name</p>
+      <h2>Your Notes</h2>
+      <button id="createnotebtn">Add New Note</button>
+      <div id="usernameinput">
+        <input type="text" placeholder="Enter Your Name?" id="nameinput">
+        <button id="usernamebtn">Submit</button>
+      </div>
+    </nav>
+    <div  id="notesbox">
+      <div class="note">
+        <p>title</p>
+        <p>Lorem ipsum dolor sit amet.text</p>
+        <div class="footer">
+          <p>date of creation</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="createnote" id="notecreatebox">
+      <p>Create a New Note</p>
+      <label>
+        <p>Title</p>
+        <input type="text" id="notetitle">
+      </label>
+      <label>
+        <p>Dsecription</p>
+        <input type="text" id="notedesc">
+      </label>
+      <button id="boxbtnnote">Create Note</button>
+      <button id="exitboxnote">X</button>
+    </div>
+
+
+    <div id="bgcover"></div>
+  </body>
+</html>
