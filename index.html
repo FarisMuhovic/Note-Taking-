@@ -14,37 +14,36 @@
       <h2 id="username">Your Name</p>
       <h2>Your Notes</h2>
       <button id="createnotebtn">Add New Note</button>
-      <div id="usernameinput">
-        <input type="text" placeholder="Enter Your Name?" id="nameinput">
-        <button id="usernamebtn">Submit</button>
-      </div>
     </nav>
-    <div  id="notesbox">
-      <div class="note">
-        <p>title</p>
-        <p>Lorem ipsum dolor sit amet.text</p>
-        <div class="footer">
-          <p>date of creation</p>
-        </div>
-      </div>
+
+    <div id="usernameinput">
+      <input type="text" placeholder="Enter Your Name?" id="nameinput">
+      <button id="usernamebtn">Submit</button>
     </div>
 
+    <div  id="notesbox">
+      <!--
+      <div class="note">
+        <p class="title">title</p>
+        <p class="desc">Lorem ipsum dolor sit amet.text</p>
+        <p class="date">date of creation</p>
+        <button id="delbtn">DELETE</button>
+        <button id="editbtn">EDIT</button>
+      </div>-->
+    </div>
 
     <div class="createnote" id="notecreatebox">
       <p>Create a New Note</p>
       <label>
-        <p>Title</p>
-        <input type="text" id="notetitle">
+        <input type="text" id="notetitle" placeholder="Title">
       </label>
       <label>
-        <p>Dsecription</p>
-        <input type="text" id="notedesc">
+        <input type="text" id="notedesc" placeholder="Description">
       </label>
       <button id="boxbtnnote">Create Note</button>
-      <button id="exitboxnote">X</button>
+      <button id="exitboxnote">Cancel</button>
     </div>
-
-
+    
     <div id="bgcover"></div>
   </body>
 </html>
