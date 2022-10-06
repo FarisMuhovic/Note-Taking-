@@ -209,11 +209,8 @@ nav {
 #notetitle , #notedesc {
   text-align: center;
 }
-#delbtn {
+#delbtn , #savebtn {
   height: 100%;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2 / 4;
   background-color: white;
   border: none;
   border-radius: 5px;
@@ -231,7 +228,7 @@ nav {
   -o-transition: 0.3s;
   border: 1px solid transparent;
 }
-#delbtn:hover {
+#delbtn:hover , #savebtn:hover{
   background-color: red;
   color: white;
 }

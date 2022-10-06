@@ -18,7 +18,6 @@ if (localStorage.getItem("name") == null) {
     bgCover.style.display = "block";
   };
 }
-
 // === NAVIGATION ADD NEW NOTE BUTTON === //
 const createNoteBtn = document.getElementById("createnotebtn");
 const noteCreationBox = document.getElementById("notecreatebox");
@@ -50,10 +49,11 @@ noteCreationBtn.addEventListener("click", function () {
     } else {
       notesContainer.innerHTML += `
     <div class="note">
-      <p class="title">${noteTitle}</p>
-      <p class="desc">${noteDesc}</p>
+      <p class="title" contenteditable="true">${noteTitle}</p>
+      <p class="desc"  contenteditable="true">${noteDesc}</p>
         <p class="date">${dateCreated.toLocaleString("en-GB")}</p>
         <button id="delbtn">DELETE</button>
+        <button id="savebtn">SAVE</button>
     </div>`;
       noteCreationBox.style.display = "none";
       bgCover.style.display = "none";
@@ -95,5 +95,13 @@ delBtn.forEach(btn => {
   btn.addEventListener("click", () => {
     btn.parentElement.remove();
     localStorage.setItem("induvidualnotes", notesContainer.innerHTML);
+  });
+});
+
+const saveButton = document.querySelectorAll(".note #savebtn");
+saveButton.forEach(btn => {
+  btn.addEventListener("click", () => {
+    localStorage.setItem("induvidualnotes", notesContainer.innerHTML);
+    window.location.reload();
   });
 });
