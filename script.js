@@ -58,6 +58,7 @@ noteCreationBtn.addEventListener("click", function () {
       noteCreationBox.style.display = "none";
       bgCover.style.display = "none";
     }
+    localStorage.setItem("induvidualnotes", notesContainer.innerHTML);
     // === DELETE A NOTE === //
     const delBtn = document.querySelectorAll(".note #delbtn");
     delBtn.forEach(btn => {
@@ -86,4 +87,13 @@ noteCreationBtn.addEventListener("click", function () {
     });
     */
   }
+});
+notesContainer.innerHTML = localStorage.getItem("induvidualnotes");
+// === DELETE A NOTE === //
+const delBtn = document.querySelectorAll(".note #delbtn");
+delBtn.forEach(btn => {
+  btn.addEventListener("click", () => {
+    btn.parentElement.remove();
+    localStorage.setItem("induvidualnotes", notesContainer.innerHTML);
+  });
 });
