@@ -14,6 +14,7 @@ body {
 nav {
   display: -ms-grid;
   display: grid;
+  z-index: 1;
   width: 100%;
   position: fixed;
   -ms-grid-columns: 1fr 1fr 1fr;
